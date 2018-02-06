@@ -14,7 +14,7 @@ namespace WebAPI.DAL
         {
             var employees = new List<Employee>
             {
-
+                new Employee{FirstName = "John", LastName = "Doe", EmpCode = "TST", Position = "Test", Office = "Test 3"}
             };
 
             employees.ForEach(s => context.Employees.Add(s));
