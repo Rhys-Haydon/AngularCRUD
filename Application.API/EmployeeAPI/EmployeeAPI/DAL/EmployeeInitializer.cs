@@ -13,7 +13,7 @@ namespace EmployeeAPI.DAL
         {
             var employees = new List<Employee>
             {
-                new Employee{FirstName = "John", LastName = "Doe", EmpCode = "TST", Office = "Test1", Position = "AO4"}
+                new Employee{FirstName = "John", LastName = "Doe", EmpCode = "TST", Position = "AO4", Office = "Test1"}
             };
 
             employees.ForEach(s => context.Employees.Add(s));

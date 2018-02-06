@@ -17,6 +17,6 @@ namespace EmployeeAPI.Models
         public string Position { get; set; }
         public string Office { get; set; }
 
-        public virtual ICollection<Employee> Employees { get; set; }
+        public ICollection<Employee> Employees { get; set; }
     }
 }

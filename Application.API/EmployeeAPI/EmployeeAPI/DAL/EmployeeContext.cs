@@ -8,17 +8,23 @@ using EmployeeAPI.Models;
 
 namespace EmployeeAPI.DAL
 {
+
     public class EmployeeContext : DbContext
     {
-        public EmployeeContext() : base("DefaultConnection")
+
+        public EmployeeContext() : base("EmployeeContext")
         {
         }
         public DbSet<Employee> Employees { get; set; }
 
+        
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
         }
 
+        
     }
 }
